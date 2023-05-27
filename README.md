@@ -1,5 +1,5 @@
 # Search Engine
-A very simple search engine application, created to fulfill the final project of a course.
+## Preview : 
 
 ![Search-Engine](https://github.com/liecy/search-engine/assets/92883002/b8bcd459-0747-48e6-9e25-3fad7e99f144)
 ### Here's how it works:
