@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="781.0" prefWidth="1518.0" styleClass="root" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="searchEngine.Controller">
+   <children>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#ffffff99" height="559.0" layoutX="96.0" layoutY="114.0" stroke="#ffffff9a" strokeType="INSIDE" width="485.0" /> 
+      <Label layoutX="130.0" layoutY="144.0" prefHeight="13.0" prefWidth="122.0" text="Karakter :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="223.0" prefHeight="5.0" prefWidth="122.0" text="Kata       :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="charField" layoutX="240.0" layoutY="148.0" onKeyReleased="#charKeyReleased" prefHeight="43.0" prefWidth="298.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <ListView fx:id="kataView" layoutX="240.0" layoutY="230.0" onMouseClicked="#kataMouseClicked" prefHeight="148.0" prefWidth="298.0" style="-fx-font: 18.75px &quot;System&quot;;" />
+      <Label layoutX="130.0" layoutY="403.0" prefHeight="15.0" prefWidth="122.0" text="Kalimat   :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="kalimatView" layoutX="131.0" layoutY="446.0" onMouseClicked="#kalimatMouseClicked" prefHeight="192.0" prefWidth="414.0" style="-fx-font: 19.25px &quot;System&quot;;" />
+      <Label fx:id="informasiLabel" alignment="CENTER" layoutX="978.0" layoutY="93.0" prefHeight="13.0" prefWidth="122.0" text="Informasi" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.003787907799988721" endY="1.0" startX="0.04545454274524342" startY="0.2272727272727273">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0941176488995552" green="0.1764705926179886" blue="0.48235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6431372761726379" green="0.800000011920929" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="infoLabel" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="635.0" layoutY="448.0" lineSpacing="4.0" prefHeight="274.0" prefWidth="810.0" AnchorPane.leftAnchor="635.0" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="448.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <WebView fx:id="gambarView" layoutX="635.0" layoutY="189.0" prefHeight="230.0" prefWidth="386.0" style="-fx-background-color: transparent;" visible="false" />
+      <WebView fx:id="videoView" layoutX="1060.0" layoutY="189.0" prefHeight="230.0" prefWidth="386.0" visible="false" />
+      <Label fx:id="gambarLabel" alignment="CENTER" layoutX="778.0" layoutY="156.0" prefHeight="30.0" prefWidth="100.0" text="Gambar" textFill="#182d7b" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="videoLabel" alignment="CENTER" layoutX="1203.0" layoutY="156.0" prefHeight="30.0" prefWidth="100.0" text="Video" textFill="#182d7b" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="9.0" prefHeight="54.0" prefWidth="170.0" text="Search Engine">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9668560606060606" startY="0.21590911980831268">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0941176488995552" green="0.1764705926179886" blue="0.48235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6431372761726379" green="0.800000011920929" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
